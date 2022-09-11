@@ -31,7 +31,7 @@ pub mod mom {
 
 fn main() {
     env_logger::init();
-    let handle = thread::spawn(|| dad::cook_spaghetti());
+    let handle = thread::spawn(dad::cook_spaghetti);
 
     mom::cook_sauce_and_set_table();
 
